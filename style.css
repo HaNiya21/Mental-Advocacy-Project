@@ -1,0 +1,297 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items:center;
+  background-color: #c15353;
+  color: #eee7e7;
+
+  padding: 1px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+
+  padding: 10px 15px;
+}
+
+.navbar ul li a:hover {
+  font-weight: bold;
+}
+#theme-button {
+    text-decoration: none;
+    color: white;
+
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212; /* Dark background for the body */
+  color: #ffffff; /* Light text for better readability in dark mode */
+}
+
+body.dark-mode .navbar {
+  background-color: #333333; /* Dark background for the navbar */
+  color: #ffffff; /* Light text color for the navbar */
+}
+
+body.dark-mode .header-container {
+  background-color: #444444; /* Dark background for the header */
+}
+
+body.dark-mode .header-button,
+body.dark-mode #theme-button {
+  background-color: #555555; /* Dark background for buttons */
+  color: #ffffff; /* Light text color for buttons */
+}
+
+body.dark-mode .resources-box li {
+  background-color: #333333; /* Dark background for resource boxes */
+  border-color: #444444; /* Dark border color for resource boxes */
+}
+
+body.dark-mode footer {
+  background-color: #333333; /* Dark background for the footer */
+}
+
+
+/* Header */
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d1010;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.header-item {
+  flex: 1;
+}
+
+.header-left {
+  text-align: left;
+}
+
+.header-right {
+  text-align: right;
+}
+
+.header-button {
+  padding: 10px 20px;
+  background-color: #a20606;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.header-button:hover {
+  background-color: #e5cccc;
+}
+.petition-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.petition-container form,
+.signatures {
+  flex: 1;
+}
+
+.signatures {
+  align-self: flex-start;
+}
+
+/* CSS for styling individual sections */
+section#impact {
+  margin-bottom: 20px;
+}
+
+.resources-box li img {
+  max-width: 100%;
+  height: auto;
+}
+
+.resources-box li p {
+  font-size: 14px;
+}
+
+/* Style for main content sections */
+main {
+  padding: 20px;
+}
+
+/* Style for individual sections */
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  color: #333; 
+}
+
+section p {
+  line-height: 1.5; 
+}
+
+/* Style for buttons */
+button {
+  padding: 10px 20px;
+  background-color: #a20606; 
+  color: #fff; 
+}
+/* Style for card or box view */
+.resources-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.resources-grid li {
+  flex-basis: calc(33.33% - 20px); 
+  margin-bottom: 20px;
+  background-color: #f9f9f9; 
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.resources-grid li img {
+  width: 100%; 
+  height: auto;
+  border-radius: 5px; 
+}
+
+.resources-grid li strong {
+  font-weight: bold;
+}
+
+.resources-box li a:hover {
+  text-decoration: underline;
+}
+
+button:hover {
+  background-color: #e5cccc; 
+}
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background: pink;
+}
+/* Define the scale animation for the modal image */
+@keyframes scaleImageAnimation {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Apply the animation to the modal image */
+.modal-content img {
+  animation: scaleImageAnimation 0.5s ease-in-out forwards;
+}
+
+/* Define the fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px); /* Start slightly below */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Fade in at original position */
+  }
+}
+
+/* Apply the animation to elements with the 'fade-in' class */
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards; /* Apply animation */
+}
+@keyframes signatureAnimation {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.signature-animation {
+  animation: signatureAnimation 0.5s ease-in-out forwards;
+}
+/* Modal Styling */
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: lightsteelblue;
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 20rem;
+}
+
+#modal-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button Styling */
+#close-modal-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+/* Style for footer */
+footer {
+  background-color: #2d1010;;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+

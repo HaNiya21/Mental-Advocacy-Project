@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Mental Health Support Hub</title>
+  <link rel="icon" href="Images/icon.png">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#petition">Petition</a></li>
+    </ul>
+  </div>
+
+  <header class="header-container">
+    <div class="header-item header-left">
+      <h1>Mental Health Support Hub</h1>
+      <h3>Empowering Mental Wellness</h3>
+    </div>
+    <div class="header-item header-right">
+      <button class="header-button" id="explore-resources">Explore Resources</button>
+      <button class="header-button" id="join-community">Join the Community</button>
+      <button id="theme-button-header">Toggle Dark Mode</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="fade-in">
+      <h2>About Mental Health Support</h2>
+      <p>Mental health is essential for overall well-being, and there's a growing need for accessible resources and support communities. The Mental Health Support Hub aims to provide a comprehensive platform offering resources, coping strategies, and a supportive community for individuals navigating mental health challenges.</p>
+      <p>Our platform fosters overall well-being by providing easily accessible and compassionate support to individuals dealing with a spectrum of mental health concerns, from everyday stress to more complex issues. We aim to address the diverse needs of our users, regardless of age, background, or level of mental health experience.</p>
+    </section>
+
+        <section id="impact" class="fade-in">
+          <h2>Impact!</h2>
+          <ul class="resources-box">
+            <li>
+              <img src="Images/use of mental health support 1.jpg" alt="Mental Health Image 1" />
+              <p>Mental health support can transform lives, providing individuals with the tools and resources they need to thrive.</p>
+            </li>
+        <li>
+          <img src="Images/5 Tips to boost your mental health.jpg" alt="Mental Health Image 2" />
+          <p>Access to mental health support can reduce stigma, improve overall well-being, and strengthen communities.</p>
+        </li>
+        <li>
+          <img src="Images/Steps-to-Overcome-MH-issues-3.jpg" alt="Mental Health Image 3" />
+          <p> By offering compassionate support and understanding, mental health support services empower individuals to overcome challenges and live fulfilling lives.</p>
+        </li>
+        <li>
+          <img src="Images/mental+healt support 4.png" alt="Mental Health Image 4" />
+          <p>From counseling and therapy to peer support groups and online resources, mental health support comes in many forms, catering to diverse needs and preferences.</p>
+        </li>
+      
+          <iframe width="1176" height="315" src="https://www.youtube.com/embed/DxIDKZHW3-E?si=4YywCmjVoxCrcJyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <p>Watch this video about We All Have Mental Health is an animation designed to give young people aged 11-14 a common language and understanding of what we mean by mental health and how we can look after it.</p>
+        </li>
+      </ul>
+    </section>
+    <!-- Petition Section -->
+      <section id="petition">
+        <h2>Sign Our Petition 📢</h2>
+        <div class="petition-container">
+          <div class="petition-para">
+            <p>Help us advocate for better mental health support systems! Sign our petition now to make a difference.</p>
+          </div>
+          <div class="signatures">
+            <p>🖊️ DJ from Brooklyn supports this.</p>
+            <p>🖊️ Amy from Queens supports this.</p>
+            <p>🖊️ Teresa from Harlem supports this.</p>
+          </div>
+        </div>
+
+        <!-- Sign Petition Form -->
+        <form id="sign-petition">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br><br>
+          <label for="email">Email:</label>
+           <input type="email" id="email" name="email" required><br><br>
+          <label for="hometown">Hometown:</label>
+          <input type="text" id="hometown" name="hometown" required><br><br>
+          <button type="submit">Sign Now</button>
+          <div id="signature-count" aria-live="polite">Total Signatures: 0</div>
+
+
+        </form>
+        <!-- Modal -->
+        <div id="thanks-modal" class="modal" style="display: none;">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div id="modal-text-container">
+              <p id="thanks-modal-content">Thank you for signing the petition!</p>
+              <!-- Button for Stretch Feature -->
+              <button id="close-modal-button">Close</button>
+            </div>
+            <!-- Image -->
+            <img src=Images/thankuu.jpgg alt="Thank You Image">
+          </div>
+        </div>
+  
+  </main>
+
+  <footer>
+    <div>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+    </div>
+    <p> &copy; 2024 Mental Health Support Hub. All rights reserved.</p>
+  </footer>
+
+  <script src="index.js" defer></script>
+</body>
+
+</html>
